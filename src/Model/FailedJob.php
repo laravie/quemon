@@ -5,6 +5,15 @@ use Illuminate\Database\Eloquent\Model;
 class FailedJob extends Model
 {
     /**
+     * The attributes that should be casted to native types.
+     *
+     * @var array
+     */
+    protected $casts = [
+        'payload' => 'json',
+    ];
+
+    /**
      * Create a new Eloquent model instance.
      *
      * @param  array  $attributes
