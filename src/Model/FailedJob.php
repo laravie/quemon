@@ -14,6 +14,15 @@ class FailedJob extends Model
     ];
 
     /**
+     * The attributes that should be mutated to dates.
+     *
+     * @var array
+     */
+    protected $dates = [
+        'failed_at',
+    ];
+
+    /**
      * Create a new Eloquent model instance.
      *
      * @param  array  $attributes
