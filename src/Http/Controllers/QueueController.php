@@ -17,6 +17,8 @@ class QueueController extends AdminController
 
     public function index()
     {
-        return view('laravie/quemon::index', ['jobs' => FailedJob::paginate()]);
+        $jobs = FailedJob::orderBy('id', 'DESC')->paginate();
+
+        return view('laravie/quemon::index', compact('jobs'));
     }
 }

@@ -1,7 +1,6 @@
 <table class="table table-striped">
     <thead>
         <tr>
-            <th>ID</th>
             <th>Payload</th>
             <th class="th-action"></th>
         </tr>
@@ -9,17 +8,18 @@
     <tbody>
         @forelse($jobs as $job)
         <tr>
-            <td>{{ $job->id }}</td>
             <td>
-                <strong>{!! array_get($job->payload, 'job') !!}</strong>
-                <pre>
-                    <code>{!! json_encode(array_except($job->payload, 'job')) !!}</code>
-                </pre>
+                <strong>{!! array_get($job->payload, 'job', 'Closure') !!}</strong>
+                <pre>{!! json_encode(array_get($job->payload, 'data'), JSON_PRETTY_PRINT) !!}</pre>
             </td>
             <td></td>
         </tr>
         @empty
-
+        <tr>
+            <td colspan="2">{{ trans('orchestra/foundation::label.no-data') }}</td>
+        </tr>
         @endforelse
     </tbody>
 </table>
+
+{!! $jobs->render() !!}
