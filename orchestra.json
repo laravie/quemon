@@ -1,6 +1,6 @@
 {
-    "name": "Queue Monitor",
-    "description": "Queue Monitoring Extension for Orchestra Platform",
+    "name": "Quemon",
+    "description": "Quemon (Queue Monitoring) Extension for Orchestra Platform",
     "author": "Laravie Development Team",
     "url": "https://github.com/laravie/quemon",
     "config": {

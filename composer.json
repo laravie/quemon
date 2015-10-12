@@ -1,6 +1,6 @@
 {
     "name": "laravie/quemon",
-    "description": "Queue Monitoring Extension for Orchestra Platform",
+    "description": "Quemon Extension for Orchestra Platform",
     "license": "MIT",
     "authors": [
         {
