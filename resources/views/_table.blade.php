@@ -1,3 +1,4 @@
+#{{ $acl = Foundation::acl() }}
 <table class="table table-striped">
     <thead>
         <tr>
@@ -12,7 +13,11 @@
                 <strong>{!! array_get($job->payload, 'job', 'Closure') !!}</strong>
                 <pre>{!! json_encode(array_get($job->payload, 'data'), JSON_PRETTY_PRINT) !!}</pre>
             </td>
-            <td></td>
+            <td>
+                @if($acl->can('manage orchestra'))
+                <a href="{{ handles("orchestra::quemon/{$job->id}/retry", ['csrf' => true]) }}" class="btn btn-warning btn-mini">Retry</a>
+                @endif
+            </td>
         </tr>
         @empty
         <tr>
