@@ -5,6 +5,6 @@ Queue Monitor
 
 Queue Monitor Extension for Orchestra Platform allow user to monitor failed queue status without accessing SSH.
 
-[![Latest Stable Version](https://img.shields.io/github/release/laravie/kurenai.svg?style=flat-square)](https://packagist.org/packages/laravie/kurenai)
-[![Total Downloads](https://img.shields.io/packagist/dt/laravie/kurenai.svg?style=flat-square)](https://packagist.org/packages/laravie/kurenai)
-[![MIT License](https://img.shields.io/packagist/l/laravie/kurenai.svg?style=flat-square)](https://packagist.org/packages/laravie/kurenai)
+[![Latest Stable Version](https://img.shields.io/github/release/laravie/quemon.svg?style=flat-square)](https://packagist.org/packages/laravie/quemon)
+[![Total Downloads](https://img.shields.io/packagist/dt/laravie/quemon.svg?style=flat-square)](https://packagist.org/packages/laravie/quemon)
+[![MIT License](https://img.shields.io/packagist/l/laravie/quemon.svg?style=flat-square)](https://packagist.org/packages/laravie/quemon)
