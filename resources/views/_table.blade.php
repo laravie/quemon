@@ -12,6 +12,7 @@
             <td>
                 <strong>{!! array_get($job->payload, 'job', 'Closure') !!}</strong>
                 <pre>{!! json_encode(array_get($job->payload, 'data'), JSON_PRETTY_PRINT) !!}</pre>
+                <small>{{ $job->failed_at->diffForHumans() }}</small>
             </td>
             <td>
                 @if($acl->can('manage orchestra'))

@@ -3,6 +3,10 @@
     "description": "Queue Monitoring Extension for Orchestra Platform",
     "author": "Laravie Development Team",
     "url": "https://github.com/laravie/quemon",
+    "config": {
+        "configurable": false,
+        "publishing": false
+    },
     "provides": [
         "Laravie\\Quemon\\QuemonServiceProvider"
     ],
