@@ -14,7 +14,7 @@ class QueueController extends AdminController
     protected function setupMiddleware()
     {
         $this->middleware('orchestra.auth');
-        $this->middleware('orchestra.manage:orchestra');
+        $this->middleware('orchestra.can:manage-orchestra');
         $this->middleware('orchestra.csrf', ['only' => 'retry']);
     }
 
