@@ -42,9 +42,9 @@ class QueueController extends AdminController
      *
      * @return mixed
      */
-    public function retry($id)
+    public function retry($id = 'all')
     {
-        Artisan::call('queue:retry', compact('id'));
+        Artisan::call('queue:retry', ['id' => (array) $id]);
 
         return redirect(handles('orchestra::quemon'));
     }
