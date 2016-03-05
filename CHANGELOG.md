@@ -2,6 +2,12 @@
 
 All Notable changes to `laravie/quemon` will be documented in this file
 
+## 1.1.1 - 2016-03-05
+
+### Fixes
+
+- Solves unable to retry failed jobs.
+
 ## 1.1.0 - 2016-01-09
 
 ### New
