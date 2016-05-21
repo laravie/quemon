@@ -1,4 +1,6 @@
-<?php namespace Laravie\Quemon\Model;
+<?php
+
+namespace Laravie\Quemon\Model;
 
 use Illuminate\Database\Eloquent\Model;
 

@@ -1,4 +1,6 @@
-<?php namespace Laravie\Quemon\Http\Handlers;
+<?php
+
+namespace Laravie\Quemon\Http\Handlers;
 
 use Orchestra\Foundation\Support\MenuHandler;
 use Orchestra\Contracts\Authorization\Authorization;

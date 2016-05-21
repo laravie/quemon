@@ -1,4 +1,6 @@
-<?php namespace Laravie\Quemon;
+<?php
+
+namespace Laravie\Quemon;
 
 use Illuminate\Support\Fluent;
 use Orchestra\Extension\Plugin;

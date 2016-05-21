@@ -1,4 +1,6 @@
-<?php namespace Laravie\Quemon;
+<?php
+
+namespace Laravie\Quemon;
 
 use Orchestra\Foundation\Support\Providers\ModuleServiceProvider;
 

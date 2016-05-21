@@ -1,4 +1,6 @@
-<?php namespace Laravie\Quemon\Http\Controllers;
+<?php
+
+namespace Laravie\Quemon\Http\Controllers;
 
 use Laravie\Quemon\Model\FailedJob;
 use Illuminate\Database\QueryException;
